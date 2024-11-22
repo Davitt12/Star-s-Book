@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.txtleft {
+    color: rgb(223, 223, 76);
+    margin-right: 2%;
+}
+
+.textright {
+    color: rgb(223, 223, 76);
+    margin-left: 2%;
+}
+
+.imgavl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}

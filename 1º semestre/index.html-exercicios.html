@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="port-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="estilo.css-2.css">
+    <title>Seu perfil star´s</title>
+</head>
+<body>
+
+    <!-- inicio do do site -->
+    <h1>Seu Perfil Star´s </h1>
+
+    <div class="icone">
+    <img src="icone_mudacor.png" width="35" button id="mudarCor"></button> 
+    </div>
+
+<!-- dados da conta -->
+    <h3> Davitt12</h3>
+   <P><strong> E-mail: </strong> aleatoriousuariodeteste@gmail.com</P>
+   <p><strong>Idade:</strong> 15 </p>
+   <p><strong>Seguidores:</strong> 3</p>
+   <p><strong>Você já leu: </strong>12.559 paginas</p>
+<!-- fim dos dados -->
+
+<div class="centro">
+<h2>Seus livros favoritos</h2>
+</div>
+
+<!-- Imagens dos livros -->
+<div class="favoritos">
+<img src="alice_no_pais_site.jpg" width="150">  
+<img src="biblioteca_da_meia_noite - site.jpg" width="150">
+<img src="jogos_vorazes_(livro).jpg" width="147">
+<img src="pequeno_principe_(livro).jpg" width="150">
+<img src="percy_jackson_2_(livro).jpg" width="150">
+<img src="harry_potter_(livro).jpg" width="155">
+</div>
+
+
+<script>
+
+    // script para o botão de mudar cor
+    const botao = document.getElementById('mudarCor');
+        const cores = ['#f56849', '#74cc84', '#edd368', '#83a2ff'];
+            botao.addEventListener('click', () => {
+        const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+                document.body.style.backgroundColor = corAleatoria;
+        });
+
+    //fim do script
+
+</script>
+
+
+</body>
+</html>
+

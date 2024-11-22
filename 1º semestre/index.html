@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<meta charset="utf-8">
+<link rel="stylesheet" href="estilo.css">
+<script src="arquivo.js"></script>
+<title>Star´s Book</title>
+
+</head>
+<body>
+
+
+<header>
+     <h2>Star´sBook</h2>
+     <h3>Avalie e veja seus livros favoritos </h3>
+</header>
+
+<nav>
+      <button><a href="index.html-exercicios.html">perfil</a></button>
+      <button><a href="index.html-jogos.html">Jogos</a></button>
+</nav>
+
+ <section>
+
+<div class="sla">
+     <h2>Mais Vendidos</h2>
+</div>
+
+<!--AQUI COMEÇAM AS IMAGENS!-->
+
+<div class="teste-2">
+     <a href="index.html-avaliação.html">
+     <img src="harry_potter_(livro).jpg" alt="harry potter e a pedra filosofal capa vermelha"  width="146"></a>
+<div class="centro-2"> <br>Harry Potter<br></div>
+</div> 
+    
+<div class="teste">
+     <a href="index.html-percy jackson.html" >
+     <img src="percy_jackson_(livro).jpg" alt="livro percy jackson ladrão de raios capa padrão" width="146"></a>  
+<div class="centro"> <br>Percy jackson<br> </div> 
+</div>
+
+<div class="teste-2">
+     <a href="index.html-jogosvorazes.html">
+     <img src="jogos_vorazes_(livro).jpg" alt="livro jogos vorazes capa" width="146"> </a>
+     <div class="centro-2"> <br>Jogos vorazes<br> </div>
+</div>
+
+<div class="teste">
+     <a href="index.html-pequenoprincipe.html">
+     <img src="pequeno_principe_(livro).jpg" alt="livro pequeno principe" width="146"> </a>
+     <div class="pokemon" ><br>O pequeno principe<br></div>   
+</div>
+<div class="teste-2">
+     <a href="index.html-itcoisa.html">
+     <img src="It_a_coisa_(livro).jpg" alt="capa do livro it a coisa" width="146"> </a>
+     <div class="centro-2"><br>It a coisa<br></div>
+</div>
+
+<div class="recomendados">
+     <h2>Recomendados</h2>
+</div>
+
+<div class="lado-2">
+     <a href="index.html-senhordosaneis.html">
+     <img class="bulbassauro" src="senhor_dos_aneis_(livro).jpg" alt="livro senhor dos aneis capa" width="146"> </a>
+     <div class="texto-bulbassauro-2"> <br> Senhor dos aneis<br></div>
+</div>
+
+<div class="lado">
+     <a href="index.html-Ohobbit.html" >
+     <img class="bulbassauro" src="Hobbit_(livro).jpg" alt="livro o Hobbit capa" width="146"> </a>
+     <div class="texto-bulbassauro"> <br> O hobbit <br> </div>
+</div>
+
+<div class="lado-2">
+     <a href="index.html-jogosvorazes2.html">
+     <img class="bulbassauro" src="jogos_vorazes_2_(livro_certo).jpg" alt="jogos vorazes em chamas livro" width="149"> </a>
+     <div class="texto-bulbassauro-2"> <br> Jogos Vorazes 2 <br> </div>
+</div>
+
+<div class="lado">
+     <a href="index.html-harrypotter3.html">
+     <img class="bulbassauro" src="harry_potter_2_(livro).jpg" alt="capa do livro harry potter e a camara secreta" width="146" height="225"> </a>
+     <div class="texto-bulbassauro"> <br> Harry Potter 3 <br> </div>
+</div>
+
+<div class="lado-2">
+     <a href="index.html-percyjackson-2.html" >
+     <img class="bulbassauro" src="percy_jackson_2_(livro).jpg" alt="capa do livro percy jackson e o mar de monstros" width="146"> </a>
+     <div class="texto-bulbassauro-2"> <br> Percy Jackson 2 <br> </div>
+</div>
+<!--FIM DAS IMAGENS-->
+</section>
+<aside>
+      <div class="propaganda"><img src="Harry_potter.png" alt="propaganda de box de livro harry potter" width="170" height="270"></div>
+      <div class="propaganda-2"><img src="sariva_(sla_logo).png" alt="logo livraria saraivas" width="170" height="250"></div>
+     
+</aside>
+
+<footer>
+     Davi Tavares 1°Ds - TELEFONE (16) 992720899 - INSTAGRAM _daviitavaress_
+</footer>
+
+ <script>
+     // script.js
+window.addEventListener("load", () => {
+    // Adiciona a classe 'show' ao body e container para animar a opacidade e o movimento
+    document.body.classList.add("show");
+    document.querySelector(".container").classList.add("show");
+});
+
+window.addEventListener("load", () => {
+    // Adiciona a classe 'show' ao body e container para animar a opacidade e o movimento
+    document.body.classList.add("show");
+    document.querySelector(".container").classList.add("show");
+
+    // Adiciona a classe 'show' às imagens após um pequeno atraso para sequência
+    setTimeout(() => {
+        const images = document.querySelectorAll(".images img");
+        document.querySelector(".images").classList.add("show");
+
+        // Animar cada imagem com um pequeno delay
+        images.forEach((img, index) => {
+            setTimeout(() => {
+                img.classList.add("show");
+            }, index * 300); // Delay para cada imagem
+        });
+    }, 1000); // Espera 1 segundo após o carregamento para animar as imagens
+});
+ </script>                                   
+
+</body>
